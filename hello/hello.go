@@ -7,6 +7,7 @@ const german = "German"
 const spanish = "Spanish"
 const world = "World"
 
+// Returns a greeting by proving the language and name
 func Hello(name, language string) string {
 	if name == "" {
 		name = world
@@ -15,6 +16,7 @@ func Hello(name, language string) string {
 	return greetingPrefix(language) + name
 }
 
+// Select the language prefix based on input
 func greetingPrefix(language string) (languagePrefix string) {
 	switch language {
 	case german:
